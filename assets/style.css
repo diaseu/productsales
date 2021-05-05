@@ -1,0 +1,120 @@
+body, html {
+  height: 100%;
+  font-family: 'Noto Sans JP', sans-serif;
+  background: repeating-linear-gradient(rgba(0, 0, 10, 0.95), rgba(0, 0, 60, 0.65));
+  color: white;
+  scroll-behavior: smooth;
+}
+
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+
+.left {
+  float: left;
+  margin-right: 50px;
+  max-width: 200px;
+}
+
+.center {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.caps {
+  text-transform: uppercase;
+}
+
+.header-image {
+    background-image: linear-gradient(rgba(0, 0, 10, 0.25), rgba(0, 0, 10, 0.15)), url("./img/elderdragon2.jpg");
+    height: 30%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.header-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+h1 {
+  font-size: 92px;
+  font-weight: 800;
+  letter-spacing:-2px;
+}
+
+h2 {
+  letter-spacing:-2px;
+}
+
+.small {
+  font-size: 64px;
+}
+
+.card {
+  max-width: 300px;
+  border-radius: 1.5rem;
+  margin: auto;
+}
+
+.card a {
+  margin: auto;
+  text-align: center;
+}
+
+.white {
+  background-color: white;
+  color: #000;
+}
+
+.pad {
+  margin-bottom: 50px;
+}
+
+.spacing {
+  height: 100px;
+}
+
+#section1 {
+  height: 100vh;
+}
+
+#section2 {
+  height: 100vh;
+}
+
+.row img {
+    max-width: 200px;
+}
+
+.row p {
+  position: relative;
+  top: 40%;
+}
+
+.footer {
+  position: relative;
+  bottom: 72px;
+  height: 72px;
+}
+
+.right {
+  text-align: right;
+}
