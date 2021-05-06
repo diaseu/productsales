@@ -22,7 +22,7 @@
   <!-- Bootstrap Nav Bar -->
   <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><strong>Ender</strong></a>
+      <a class="navbar-brand caps" href="#"><strong>Ender</strong></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
         aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -83,33 +83,33 @@
       
       <!-- Descriptions with 3 items -->
       <div class="sections pad">
+        <!-- Item 1 -->
         <div class="row pad">
-          <!-- Item 1 -->
-          <div class="col">
+            <div class="col pad">
             <img src="./assets/img/speed.png" alt="Speed status" class="center">
           </div>
           <div class="col">
-            <p class="pad">Blessed wth enchantments to allow for swift movements</p>
+            <p>Blessed wth enchantments to allow for swift movements</p>
           </div>
         </div>
           
+        <!-- Item 2 -->
         <div class="row pad">
-          <!-- Item 2 -->
-          <div class="col">
+          <div class="col pad">
             <img src="./assets/img/hp.png" alt="HP bar" class="center">
           </div>
           <div class="col">
-            <p class="pad">The difference between dying and winning</p>
+            <p>The difference between dying and winning</p>
           </div>
         </div>
 
+        <!-- Item 3 -->
         <div class="row pad">
-          <!-- Item 3 -->
-          <div class="col">
+          <div class="col pad">
             <img src="./assets/img/boost.png" alt="HP bar" class="center">
           </div>
           <div class="col">
-            <p class="pad">1.7 seconds duration, 5 seconds cooldown</p>
+            <p>1.7 seconds duration, 5 seconds cooldown</p>
           </div>
         </div>
 
@@ -128,9 +128,7 @@
       </div>
 
       <!-- Back to Top -->
-      <div class="back-to-top-wrapper">
-        <a href="#top" class="back-to-top-link" aria-label="Scroll to Top">^</a>
-      </div>
+      <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
 
     </div>
     <!-- End of Section 2 -->
@@ -148,6 +146,25 @@
     </div>
   </footer>
   <!-- End of Footer -->
+
+  <script>
+    $(document).ready(function () {
+        $(window).scroll(function () {
+          if ($(this).scrollTop() > 900) {
+            $('#toTopBtn').fadeIn();
+          } else {
+            $('#toTopBtn').fadeOut();
+          }
+        });
+
+        $('#toTopBtn').click(function () {
+          $("html, body").animate({
+            scrollTop: 0
+          }, 1000);
+          return false;
+        });
+      });
+  </script>
   
 </body>
 </html>
