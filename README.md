@@ -8,5 +8,5 @@ Product Sales website project for UCI Coding Bootcamp
 
 - 5/6/2021 : Responsive Update
 
-
+- 5/5/2021 : v1.0 
 
