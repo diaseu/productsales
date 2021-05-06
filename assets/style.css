@@ -1,7 +1,7 @@
 body, html {
   height: 100%;
   font-family: 'Noto Sans JP', sans-serif;
-  background: repeating-linear-gradient(rgba(0, 0, 10, 0.95), rgba(0, 0, 60, 0.65));
+  background: repeating-linear-gradient(rgba(0, 0, 10, 0.95), rgba(45, 54, 96, 0.85));
   color: white;
   scroll-behavior: smooth;
 }
@@ -55,7 +55,7 @@ body, html {
 }
 
 h1 {
-  font-size: 92px;
+  font-size: 5vw;
   font-weight: 800;
   letter-spacing:-2px;
 }
@@ -65,7 +65,7 @@ h2 {
 }
 
 .small {
-  font-size: 64px;
+  font-size: 0.5em;
 }
 
 .card {
@@ -98,6 +98,10 @@ h2 {
 
 #section2 {
   height: 100vh;
+}
+
+.descriptions {
+  display: flex;
 }
 
 .row img {

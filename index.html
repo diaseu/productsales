@@ -4,8 +4,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Reset CSS -->
-  <link rel="stylesheet" href="./assets/reset.css">
   <!-- Bootstrap & Bootstrap-provided Navbar -->
   <link rel="stylesheet" href="./assets/bootstrap.css">
   <link rel="stylesheet" href="./assets/navbar-top-fixed.css">
@@ -38,7 +36,7 @@
         </ul>
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-primary" type="submit">Search</button>
         </form>
       </div>
     </div>
@@ -53,7 +51,7 @@
     
       <!-- Display Image -->
       <div class="center">
-        <img src="./assets/img/Boots_of_Swiftness.png" alt="" class="block fit" width="460px">
+        <img src="./assets/img/Boots_of_Swiftness.png" alt="" class="block fit" width="35%">
       </div>
       
       <!-- Display Title -->
@@ -82,7 +80,7 @@
       <div class="spacing"></div>
       
       <!-- Descriptions with 3 items -->
-      <div class="sections pad">
+      <div class="description pad"></div>
         <!-- Item 1 -->
         <div class="row pad">
             <div class="col pad">
@@ -113,19 +111,26 @@
           </div>
         </div>
 
+        <!-- Item 4 -->
+        <div class="row pad">
+          <div class="col">
+            <h1 class="center">GET SWIFT</h1>
+          </div>
+        </div>
+
+        <!-- Item 5: Waitlist Signup Form -->
+        <div class="row pad">
+          <div class="col pad center">
+            <span class="center">Sign up for waitlist</span>
+            <input type="Email"><button id="submit">Submit</button>
+          </div>
+        </div>
+
+
       </div>
       <!-- End of Descriptions -->
-      
 
-      <div class="center pad">
-        <h1>GET SWIFT</h1>
-      </div>
-      
-      <!-- Waitlist Signup Form -->
-      <div class="center">
-        <span class="center">Sign up for waitlist</span>
-        <input type="Email"><button id="submit">Submit</button>
-      </div>
+
 
       <!-- Back to Top -->
       <a href="#" id="toTopBtn" class="cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out" data-abc="true"></a>
@@ -150,7 +155,7 @@
   <script>
     $(document).ready(function () {
         $(window).scroll(function () {
-          if ($(this).scrollTop() > 900) {
+          if ($(this).scrollTop() > 400) {
             $('#toTopBtn').fadeIn();
           } else {
             $('#toTopBtn').fadeOut();
@@ -166,5 +171,7 @@
       });
   </script>
   
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
 </body>
 </html>
