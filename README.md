@@ -2,7 +2,7 @@
 
 Product Sales website project for UCI Coding Bootcamp
 
-<img src="https://i.imgur.com/31yLonn.png" alt="Screenshot of website">
+<a href="https://diaseu.github.io/productsales/"><img src="https://i.imgur.com/31yLonn.png" alt="Screenshot of website"></a>
 
 ## Changelog
 
